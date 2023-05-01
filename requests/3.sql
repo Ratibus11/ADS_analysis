@@ -1,7 +1,7 @@
-SELECT quantites_par_siecle_total.siecle as siecle, quantite_total, quantite_aegypte, ROUND(quantite_aegypte::numeric / quantite_total::numeric * 100, 2)
+SELECT quantites_par_siecle_total.siecle as siecle, quantite_totale, quantite_aegypte, ROUND(quantite_aegypte::NUMERIC / quantite_totale::NUMERIC * 100, 2) AS part_aegypte
 
 FROM
-	(SELECT SUM(quantite) AS quantite_total, siecle
+	(SELECT SUM(quantite) AS quantite_totale, siecle
 	FROM (
 		SELECT quantite, CEIL(annee / 100) + 1 AS siecle
 		FROM commande
