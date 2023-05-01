@@ -1,0 +1,41 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "NPM: Start",
+			"runtimeExecutable": "npm",
+			"args": ["run", "start"],
+			"cwd": "${workspaceFolder}",
+			"internalConsoleOptions": "openOnSessionStart"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "NPM: Build",
+			"runtimeExecutable": "npm",
+			"args": ["run", "build"],
+			"cwd": "${workspaceFolder}",
+			"internalConsoleOptions": "openOnSessionStart"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "NPM: Dev",
+			"runtimeExecutable": "npm",
+			"args": ["run", "dev"],
+			"cwd": "${workspaceFolder}",
+			"internalConsoleOptions": "openOnSessionStart"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "NPM: Clean",
+			"runtimeExecutable": "npm",
+			"args": ["run", "clean"],
+			"cwd": "${workspaceFolder}",
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}
